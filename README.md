@@ -1,1 +1,1 @@
-A website of a restaurant with different kids of foods and price ranges
+A website of a restaurant with different kinds of food and price ranges

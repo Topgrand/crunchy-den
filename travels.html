@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crunchy restaurant</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body background="assets/background.jpg.jpg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">The Crunchy Den</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to The Crunchy Den</h1>
+    
+    <h2>Choose Your preferred meal</h2>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="destination">
+        <h3>Main Course</h3>
+        <p>Charge Rate: $12 per plate</p>
+        <button onclick="showFoods('destination1')">View Foods</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="destination">
+        <h3>Dessert</h3>
+        <p>Charge Rate: $5 per serving</p>
+        <button onclick="showFoods('destination2')">View Foods</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="destination">
+        <h3>Drinks</h3>
+        <p>Charge Rate: Price subject to change depending on drink</p>
+        <button onclick="showFoods('destination3')">View Foods</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="destination">
+        <h3>Appetizer</h3>
+        <p>Charge Rate: $8 per serving</p>
+        <button onclick="showFoods('destination4')">View Foods</button>
+      </div>
+      <!-- Card 5 -->
+      <div class="destination">
+        <h3>Salad</h3>
+        <p>Charge Rate: $6 per serving</p>
+        <button onclick="showFoods('destination5')">View Foods</button>
+      </div>
+      <!-- Card 6 -->
+      <div class="destination">
+        <h3>Soup</h3>
+        <p>Charge Rate: $4 per serving</p>
+        <button onclick="showFoods('destination6')">View Foods</button>
+      </div>
+      <!-- Card 7 -->
+      <div class="destination">
+        <h3>Pasta</h3>
+        <p>Charge Rate: $10 per plate</p>
+        <button onclick="showFoods('destination7')">View Foods</button>
+      </div>
+      <!-- Card 8 -->
+      <div class="destination">
+        <h3>Seafood</h3>
+        <p>Charge Rate: $15 per plate</p>
+        <button onclick="showFoods('destination8')">View Foods</button>
+      </div>
+      <!-- Card 9 -->
+      <div class="destination">
+        <h3>Vegetarian</h3>
+        <p>Charge Rate: $9 per plate</p>
+        <button onclick="showFoods('destination9')">View Foods</button>
+      </div>
+      <!-- Card 10 -->
+      <div class="destination">
+        <h3>Beverages</h3>
+        <p>Charge Rate: Price subject to change depending on beverage</p>
+        <button onclick="showFoods('destination10')">View Foods</button>
+      </div>
+    </div>
+    <div id="foods" style="display: none;">
+      <h2>Foods</h2>
+      <div id="food-list">
+   
+        <!-- Food items will be displayed here -->
+      </div>
+    </div>
+  </div>
+  
+
+  <footer id="about" class="bg-dark text-light py-4">
+    <div class="container">
+      <h2>About The Crunchy Den</h2>
+      <p>Establshed in 2006, the Crunchy Den is a cozy restaurant specializing in delicious and freshly prepared meals. Located in a serene environment, we offer a wide range of dishes, desserts, and beverages to satisfy your cravings. Our commitment is to provide exceptional dining experiences to our customers. In 2017, we were nominated in six different categories and we managed to win in five of those as an exemplary choice for both local and international costumers</p>
+  
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/thecrunchyden/" target="_blank" class="mr-3">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/TheCrunchyDen" target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+  
+      <!-- Testimonials -->
+      <div class="testimonials mt-4">
+        <h3>Testimonials</h3>
+        <div class="testimonial">
+          <p>"Delicious food and great atmosphere! Highly recommended."</p>
+          <p>- John Mark</p>
+        </div>
+        <div class="testimonial">
+          <p>"The Crunchy Den never disappoints! Love their desserts!"</p>
+          <p>- Peter Pan</p>
+        </div>
+        <div class="testimonial">
+<p>"Its finger licking good"</p>
+<p>- Pancakes G</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="functions.js"></script>
+</body>
+</html>

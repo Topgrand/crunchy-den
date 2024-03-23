@@ -1,0 +1,119 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destination {
+  background-color: rgb(238, 231, 231);
+  border: 1px solid #151414;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease forwards;
+  align-items: center;
+}
+
+.destination h3 {
+  align-items: center;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.destination p {
+  margin-bottom: 10px;
+}
+
+.destination button {
+  background-color: #28a745;
+  color: #eee9e9;
+  width: 100%;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.destination button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.food-item {
+  display: inline-flex;
+  border: 1px solid #1a1616;
+  background-color: #eee9e9;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+footer {
+  background-color: #dfe2e5;
+  color: rgb(19, 15, 15);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links a {
+  color: white;
+  margin-right: 10px;
+}
+
+.testimonials {
+  margin-top: 30px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+
+@media (min-width: 576px) {
+  .destination {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .destination {
+    width: calc(33.33% - 10px);
+  }
